@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Una carta de cumpleaños hecha con amor y nuestros recuerdos favoritos."
+    />
+    <meta name="theme-color" content="#fbf6f0" />
+    <title>Para Sofía, con todo mi amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="intro" id="inicio" aria-labelledby="intro-title">
+        <div class="intro-glow intro-glow--one" aria-hidden="true"></div>
+        <div class="intro-glow intro-glow--two" aria-hidden="true"></div>
+        <span class="intro-sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="intro-sparkle sparkle-two" aria-hidden="true">✧</span>
+        <span class="intro-sparkle sparkle-three" aria-hidden="true">♡</span>
+
+        <div class="intro-photos" aria-hidden="true">
+          <div class="intro-photo photo-one"><img src="assets/photos/photo-01.jpeg" alt="" /></div>
+          <div class="intro-photo photo-two"><img src="assets/photos/photo-02.jpeg" alt="" /></div>
+          <div class="intro-photo photo-three"><img src="assets/photos/photo-03.jpeg" alt="" /></div>
+          <div class="intro-photo photo-four"><img src="assets/photos/photo-04.jpeg" alt="" /></div>
+          <div class="intro-photo photo-five"><img src="assets/photos/photo-05.jpeg" alt="" /></div>
+          <div class="intro-photo photo-six"><img src="assets/photos/photo-06.jpeg" alt="" /></div>
+          <div class="intro-photo photo-seven"><img src="assets/photos/photo-07.jpeg" alt="" /></div>
+        </div>
+
+        <div class="intro-copy">
+          <p class="eyebrow intro-eyebrow">Una pequeña sorpresa para Sofía</p>
+          <h1 id="intro-title">
+            <span class="intro-message intro-message--first">Hoy es un día especial, porque el mundo celebra la suerte de tenerte en él...</span>
+            <span class="intro-message intro-message--second">Tengo algo muy especial para ti. <span aria-hidden="true">❤️</span></span>
+          </h1>
+          <div class="heart-stage" id="heart-stage">
+            <button
+              class="heart-unlock intro-button"
+              id="open-gift"
+              type="button"
+              aria-label="Abrir el regalo tocando el corazón tres veces"
+              aria-describedby="heart-instructions"
+              disabled
+            >
+              <span class="heart-unlock-glyph" aria-hidden="true">♥</span>
+            </button>
+            <p class="heart-instructions" id="heart-instructions">Toca el corazón tres veces para abrir tu regalo</p>
+            <div class="heart-progress" id="heart-progress" role="status" aria-live="polite" aria-label="0 de 3 toques al corazón">
+              <span aria-hidden="true">♡</span><span aria-hidden="true">♡</span><span aria-hidden="true">♡</span>
+            </div>
+          </div>
+          <p class="intro-hint">Hecho con todo mi amor, para Sofía</p>
+        </div>
+
+        <div class="intro-bottom" aria-hidden="true">
+          <span>para mi persona favorita</span>
+          <span class="intro-bottom-heart">♡</span>
+          <span>con amor, siempre</span>
+        </div>
+      </section>
+
+      <div class="experience" id="experiencia" hidden>
+        <header class="site-header">
+          <a class="wordmark" href="#carta" aria-label="Ir al comienzo de la carta">
+            <span class="wordmark-mark" aria-hidden="true">♡</span>
+            <span>un regalo para ti</span>
+          </a>
+          <span class="header-note">hecho con amor, para Sofía</span>
+        </header>
+
+        <section class="letter-section" id="carta" aria-labelledby="letter-heading">
+          <div class="letter-photo-orbit" aria-hidden="true">
+            <img class="orbit-photo orbit-photo--one" src="assets/photos/photo-01.jpeg" alt="" />
+            <img class="orbit-photo orbit-photo--two" src="assets/photos/photo-02.jpeg" alt="" />
+            <img class="orbit-photo orbit-photo--three" src="assets/photos/photo-03.jpeg" alt="" />
+            <img class="orbit-photo orbit-photo--four" src="assets/photos/photo-04.jpeg" alt="" />
+            <img class="orbit-photo orbit-photo--five" src="assets/photos/photo-05.jpeg" alt="" />
+            <img class="orbit-photo orbit-photo--six" src="assets/photos/photo-06.jpeg" alt="" />
+            <img class="orbit-photo orbit-photo--seven" src="assets/photos/photo-07.jpeg" alt="" />
+          </div>
+          <div class="section-intro">
+            <p class="eyebrow">Para celebrar tu vida</p>
+            <h2 id="letter-heading">Una carta para ti</h2>
+            <span class="tiny-divider" aria-hidden="true"><span>✦</span></span>
+          </div>
+
+          <article class="letter-paper">
+            <span class="paper-flower paper-flower--top" aria-hidden="true">✿</span>
+            <span class="paper-flower paper-flower--bottom" aria-hidden="true">✿</span>
+            <div class="letter-content">
+              <p class="letter-date">En tu día especial</p>
+              <div class="letter-copy" id="letter-copy" aria-hidden="true"></div>
+              <p class="visually-hidden" id="letter-accessible"></p>
+              <button class="skip-writing" id="skip-writing" type="button">Leer la carta completa</button>
+              <div class="letter-end-mark" id="letter-end-mark" aria-hidden="true">
+                <span>♥</span><i>✦</i><i>✧</i>
+              </div>
+            </div>
+            <p class="paper-caption">con todo mi corazón</p>
+          </article>
+          <a class="scroll-cue" href="#recuerdos">
+            <span>Unos recuerdos nuestros</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </section>
+
+        <section class="memories-section" id="recuerdos" aria-labelledby="memories-heading">
+          <div class="memories-heading">
+            <p class="eyebrow">Pequeños pedacitos de felicidad</p>
+            <h2 id="memories-heading">Cada fotografía guarda un instante, pero cada instante contigo se convierte en un recuerdo eterno.</h2>
+            <p class="memories-note">Y estos son algunos de mis favoritos <span aria-hidden="true">♡</span></p>
+          </div>
+
+          <div class="photo-collage" aria-label="Galería de nuestros recuerdos">
+            <button class="memory memory--one" type="button" data-photo="0" aria-label="Ver recuerdo: selfie juntos bajo el cielo">
+              <img src="assets/photos/photo-01.jpeg" alt="Una selfie de los dos bajo el cielo azul." loading="lazy" />
+              <span class="memory-caption">a tu lado ♡</span>
+            </button>
+            <button class="memory memory--two" type="button" data-photo="1" aria-label="Ver recuerdo: una foto juntos frente al espejo">
+              <img src="assets/photos/photo-02.jpeg" alt="Los dos juntos frente al espejo." loading="lazy" />
+              <span class="memory-caption">mi lugar favorito</span>
+            </button>
+            <button class="memory memory--three" type="button" data-photo="2" aria-label="Ver recuerdo: una aventura entre montañas">
+              <img src="assets/photos/photo-03.jpeg" alt="Una aventura juntos rodeados de montañas." loading="lazy" />
+              <span class="memory-caption">aventuras contigo</span>
+            </button>
+            <button class="memory memory--four" type="button" data-photo="3" aria-label="Ver recuerdo: una cena de celebración">
+              <img src="assets/photos/photo-04.jpeg" alt="Una cena especial para celebrar juntos." loading="lazy" />
+              <span class="memory-caption">un día para recordar</span>
+            </button>
+            <button class="memory memory--five" type="button" data-photo="4" aria-label="Ver recuerdo: juntos en las montañas">
+              <img src="assets/photos/photo-05.jpeg" alt="Los dos juntos en lo alto de las montañas." loading="lazy" />
+              <span class="memory-caption">el mundo contigo</span>
+            </button>
+            <button class="memory memory--six" type="button" data-photo="5" aria-label="Ver recuerdo: un abrazo de amor">
+              <img src="assets/photos/photo-06.jpeg" alt="Un abrazo lleno de cariño." loading="lazy" />
+              <span class="memory-caption">mi abrazo favorito</span>
+            </button>
+            <button class="memory memory--seven" type="button" data-photo="6" aria-label="Ver recuerdo: un momento juntos">
+              <img src="assets/photos/photo-07.jpeg" alt="Un momento especial compartido juntos." loading="lazy" />
+              <span class="memory-caption">siempre nosotros</span>
+            </button>
+          </div>
+          <p class="gallery-footer"><span aria-hidden="true">✦</span> Un álbum pequeño para un amor inmenso <span aria-hidden="true">✦</span></p>
+        </section>
+
+        <section class="closing-section" aria-labelledby="closing-heading">
+          <div class="closing-orbit" aria-hidden="true">
+            <span class="orbit orbit--one"></span>
+            <span class="orbit orbit--two"></span>
+            <span class="closing-heart">♥</span>
+            <span class="closing-spark closing-spark--one">✦</span>
+            <span class="closing-spark closing-spark--two">✧</span>
+          </div>
+          <p class="eyebrow">Y si volviera a empezar...</p>
+          <h2 id="closing-heading">Si pudiera volver a elegir entre todos los caminos del mundo, volvería a elegir aquel que me llevó hasta ti. Porque tenerte en mi vida es uno de los regalos más bonitos que me ha dado el destino.</h2>
+          <p class="closing-birthday">Feliz cumpleaños, mi amor. <span aria-hidden="true">❤️</span></p>
+          <p class="closing-signature">Con todo mi amor, siempre.</p>
+          <span class="closing-footer" aria-hidden="true">♡</span>
+        </section>
+
+        <footer class="site-footer">
+          <span>Una historia nuestra, guardada aquí para siempre.</span>
+          <span aria-hidden="true">♡</span>
+        </footer>
+      </div>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Visor de recuerdos">
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Cerrar foto">×</button>
+      <button class="lightbox-arrow lightbox-arrow--prev" id="lightbox-prev" type="button" aria-label="Foto anterior">‹</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" src="assets/photos/photo-01.jpeg" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-arrow lightbox-arrow--next" id="lightbox-next" type="button" aria-label="Foto siguiente">›</button>
+      <p class="lightbox-count" id="lightbox-count"></p>
+    </dialog>
+  </body>
+</html>
